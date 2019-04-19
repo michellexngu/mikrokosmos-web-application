@@ -2,9 +2,12 @@
 
 ## Commit Proposal
 
-Matriculation Number: <to be filled by student>
+Matriculation Number: <17-550-096>
 
 Project idea short description: 
+
+A personal website which has a blog function and where I can display my portfolio/work.
+The administrator can create/edit/delete posts. Viewers have the possibility to comment and like the posts.
 
 
 ## Project confirmation
