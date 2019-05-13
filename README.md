@@ -12,7 +12,9 @@ The administrator can create/edit/delete posts. Viewers have the possibility to 
 
 ## Project confirmation
 
-< to be filled by lecturer>
+Confirmed.
+
+D. König
 
 
 ## Project delivery <to be filled by student>
