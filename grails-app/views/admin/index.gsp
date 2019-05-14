@@ -20,8 +20,10 @@
 
 <body>
 <ul class="main-nav">
-    <li><a href="/public/about">about me</a></li>
     <li><a class="active" href="/admin/index">admin</a></li>
+    <li><a href="/public/about">about me</a></li>
+    <li><a href="/public/projects">projects</a></li>
+    <li><a href="/public/journal">journal</a></li>
     <li><a href="/">home</a></li>
     <li class="logo"><a href="/"><asset:image src="michelle_logo.svg" class="m_logo_small"/></a></li>
 </ul>

@@ -12,5 +12,9 @@ class UrlMappings {
         "500"(view:'/error')
         "404"(view:'/notFound')
         "/public/about"(view:'/public/aboutMe')
+        "/public/contact"(view:'/public/contact')
+        "/public/journal"(view:'/public/journal')
+        "/public/projects"(view:'/public/projects')
+        "/admin/index"(view:'/admin/index')
     }
 }
