@@ -54,6 +54,9 @@ ul.main-nav li.logo {
 .canvas_pic {
     width: 100%;
 }
+.watermark {
+    opacity: .8;
+}
 
 .m_logo_small {
     width: 25px;
@@ -99,6 +102,75 @@ ul.main-nav li.logo {
     align-items: center;
 }
 
+#body_align{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.img-align-profile {
+    float: right;
+    height: 500px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+
+}
+
+section.workPage .project-container {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    margin-top: 128px; }
+section.workPage .project-container .workThumbnailContainer {
+    width: 100%;
+    padding-bottom: 166.666666666%; }
+section.workPage .project-container .projectThumbnail {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    pointer-events: all; }
+section.workPage .project-container .projectThumbnail > a {
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+section .project-container .projectThumbnail.small {
+    width: 33.333333333%;
+    padding-bottom: 33.333333333%; }
+section .project-container .projectThumbnail.medium {
+    width: 66.666666666%;
+    padding-bottom: 33.333333333%; }
+section .project-container .projectThumbnail.large {
+    width: 66.666666666%;
+    padding-bottom: 66.666666666%; }
+section .project-container .projectThumbnail.columnOne {
+    left: 0px; }
+section .project-container .projectThumbnail.columnTwo {
+    left: 33.333333333%; }
+section .project-container .projectThumbnail.columnThree {
+    left: 66.666666666%; }
+section .project-container .projectThumbnail.rowOne {
+    top: 0px;
+background: #eea236}
+section .project-container .projectThumbnail.rowTwo {
+    top: 20%;
+background: #761c19}
+section .project-container .projectThumbnail.rowThree {
+    top: 40%;
+background: #2e6da4}
+
+section .project-container .projectThumbnail.columnOne.rowOne img {
+    width: 33.333333333333333%;
+}
+
+.row {
+    padding: 0;
+}
+.col-sm-4, .col-sm-8{
+    padding: 0;
+}
 
 
 @media screen and (min-width: 600px) {

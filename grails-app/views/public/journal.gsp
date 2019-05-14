@@ -24,8 +24,12 @@
     <li><a href="/">home</a></li>
     <li class="logo"><a href="/"><asset:image src="michelle_logo.svg" class="m_logo_small"/></a></li>
 </ul>
-<h1 class="title">Journal</h1>
-<p>Replace this with blog entries</p>
+
+<div class="svg" role="presentation">
+    <div class="canvas-container watermark">
+        <asset:image src="shooting-star.png" class="canvas_pic"/>
+    </div>
+</div>
 
 </body>
 </html>

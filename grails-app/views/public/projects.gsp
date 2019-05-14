@@ -24,8 +24,40 @@
     <li><a href="/">home</a></li>
     <li class="logo"><a href="/"><asset:image src="michelle_logo.svg" class="m_logo_small"/></a></li>
 </ul>
-<h1 class="title">About me</h1>
-<p>Replace this with a collection of my projects</p>
+
+
+<section>
+    <div class="project-container">
+        <div class="row">
+            <div class="projectThumbnail medium colOne rowOne" style="background-color:yellow;">
+                <asset:image src="shooting-star.png"
+                             class=" col-sm-8 projectThumbnail medium colOne rowOne"></asset:image>
+            </div>
+
+            <div class="projectThumbnail small colThree rowOne" style="background-color:orange;">
+                <asset:image src="profile.jpg" class=" col-sm-4 projectThumbnail medium colOne rowOne" style="height: 314.23px"></asset:image>
+
+            </div>
+
+            <div class="projectThumbnail small colOne rowTwo" style="background-color:orange;">
+                <asset:image src="profile.jpg" class=" col-sm-4 projectThumbnail medium colOne rowOne"></asset:image>
+
+            </div>
+
+            <div class="projectThumbnail large colTwo rowTwo" style="background-color:orange;">
+                <asset:image src="profile.jpg" class=" col-sm-8 projectThumbnail medium colOne rowOne"></asset:image>
+
+            </div>
+
+
+            <div class="projectThumbnail small colOne rowThree" style="background-color:orange;">
+                <asset:image src="profile.jpg" class=" col-sm-4 projectThumbnail medium colOne rowOne"></asset:image>
+
+            </div>
+        </div>
+    </div>
+
+</section>
 
 </body>
 </html>
