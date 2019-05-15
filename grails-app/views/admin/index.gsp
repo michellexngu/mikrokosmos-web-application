@@ -15,25 +15,13 @@
     <asset:link rel="icon" href="michelle_logo.ico" type="image/x-ico"/>
     <asset:stylesheet src="stylesheet.css"></asset:stylesheet>
     <g:set var="entityName" value="${message(code: 'post.label', default: 'Post')}"/>
-    <title><g:message code="default.list.label" args="[entityName]"/></title>
 </head>
 
 <body>
-<ul class="main-nav">
-    <li><a class="active" href="/admin/index">admin</a></li>
-    <li><a href="/public/about">about me</a></li>
-    <li><a href="/public/projects">projects</a></li>
-    <li><a href="/public/journal">journal</a></li>
-    <li><a href="/">home</a></li>
-    <li class="logo"><a href="/"><asset:image src="michelle_logo.svg" class="m_logo_small"/></a></li>
-</ul>
+<tmpl:/navbar whoIsActive="admin"></tmpl:/navbar>
+
 <a href="#list-post" class="skip" tabindex="-1"><g:message code="default.link.skip.label"
                                                            default="Skip to content&hellip;"/></a>
-<div class="svg" role="presentation">
-    <div class="canvas-container watermark">
-        <asset:image src="shooting-star.png" class="canvas_pic"/>
-    </div>
-</div>
 
 <div class="nav" role="navigation">
     <ul>

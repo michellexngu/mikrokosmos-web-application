@@ -41,10 +41,12 @@ class PostController {
         }
     }
 
+    //edit the created post
     def edit(Post post) {
         respond post
     }
 
+    //save/update the created post
     @Transactional
     def update(Post post) {
         if (post == null) {
@@ -70,6 +72,7 @@ class PostController {
         }
     }
 
+    //delete the created post
     @Transactional
     def delete(Post post) {
 

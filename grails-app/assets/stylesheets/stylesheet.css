@@ -1,10 +1,16 @@
 * {
-    border-radius: 0 !important;
+    /*border-radius: 0 !important;*/
     /*color: whitesmoke !important;*/
 }
 
 body {
-    background: whitesmoke;
+    background-image: url(shooting-star.png);
+    height: 100%;
+    opacity: .9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background: whitesmoke;*/
     color: #161639;
 }
 
@@ -41,8 +47,9 @@ ul.main-nav li.logo {
 }
 
 .title {
-    color: #161639;
+    color: whitesmoke;
 }
+
 .canvas-container {
     background: #7c7c7c no-repeat 50% 30%;
     margin-bottom: 20px;
@@ -54,16 +61,13 @@ ul.main-nav li.logo {
 .canvas_pic {
     width: 100%;
 }
-.watermark {
-    opacity: .8;
-}
 
 .m_logo_small {
     width: 25px;
     height: 25px;
 }
 
-.intro-title{
+.intro-title {
     color: whitesmoke;
 }
 
@@ -95,14 +99,17 @@ ul.main-nav li.logo {
     background: orchid;
 }
 
+
 .flex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
+    margin-top: 75%;
 }
 
-#body_align{
+#body_align {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 30px;
@@ -116,61 +123,177 @@ ul.main-nav li.logo {
 
 }
 
-section.workPage .project-container {
-    position: absolute;
-    top: 65%;
+img {
     width: 100%;
-    margin-top: 128px; }
-section.workPage .project-container .workThumbnailContainer {
-    width: 100%;
-    padding-bottom: 166.666666666%; }
-section.workPage .project-container .projectThumbnail {
-    position: absolute;
-    overflow: hidden;
-    z-index: 1;
-    -webkit-transform-origin: left top;
-    -ms-transform-origin: left top;
-    transform-origin: left top;
-    pointer-events: all; }
-section.workPage .project-container .projectThumbnail > a {
-    width: 100%;
-    height: 100%;
-    position: absolute; }
-section .project-container .projectThumbnail.small {
-    width: 33.333333333%;
-    padding-bottom: 33.333333333%; }
-section .project-container .projectThumbnail.medium {
-    width: 66.666666666%;
-    padding-bottom: 33.333333333%; }
-section .project-container .projectThumbnail.large {
-    width: 66.666666666%;
-    padding-bottom: 66.666666666%; }
-section .project-container .projectThumbnail.columnOne {
-    left: 0px; }
-section .project-container .projectThumbnail.columnTwo {
-    left: 33.333333333%; }
-section .project-container .projectThumbnail.columnThree {
-    left: 66.666666666%; }
-section .project-container .projectThumbnail.rowOne {
-    top: 0px;
-background: #eea236}
-section .project-container .projectThumbnail.rowTwo {
-    top: 20%;
-background: #761c19}
-section .project-container .projectThumbnail.rowThree {
-    top: 40%;
-background: #2e6da4}
-
-section .project-container .projectThumbnail.columnOne.rowOne img {
-    width: 33.333333333333333%;
 }
 
 .row {
     padding: 0;
 }
-.col-sm-4, .col-sm-8{
+
+.small {
+    width: 33%;
+}
+
+.col-sm-4, .col-sm-8 {
     padding: 0;
 }
+
+.intro-container {
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.about-text {
+    color: whitesmoke;
+}
+
+/*------------------*/
+/***** Project *****/
+/*-----------------*/
+
+
+/* Common style */
+.col-sm-8 figure, .col-sm-4 figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    /*background: #3085a3;*/
+    text-align: center;
+    cursor: pointer;
+}
+
+.col-sm-8 figure img, .col-sm-4 figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    /*opacity: 0.8;*/
+}
+
+.col-sm-8 figure figcaption, .col-sm-4 figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.col-sm-8 figure figcaption::before,
+.col-sm-8 figure figcaption::after,
+.col-sm-4 figure figcaption::before,
+.col-sm-4 figure figcaption::before{
+    pointer-events: none;
+}
+
+.col-sm-8 figure figcaption,
+.col-sm-8 figure figcaption > a,
+.col-sm-4 figure figcaption,
+.col-sm-4 figure figcaption > a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.col-sm-8 figure figcaption > a,
+.col-sm-4 figure figcaption > a{
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.col-sm-8 figure h2,
+.col-sm-4 figure h2{
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.col-sm-8 figure h2 span,
+.col-sm-4 figure h2 span{
+    font-weight: 800;
+}
+
+.col-sm-8 figure h2,
+.col-sm-8 figure p,
+.col-sm-4 figure h2,
+.col-sm-4 figure p{
+    margin: 0;
+}
+
+.col-sm-8 figure p,
+.col-sm-4 figure p{
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+/*---------------*/
+/***** Sadie *****/
+/*---------------*/
+
+figure.effect-sadie figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    content: '';
+    opacity: 0;
+    -webkit-transform: translate3d(0,50%,0);
+    transform: translate3d(0,50%,0);
+}
+
+figure.effect-sadie h2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    color: #484c61;
+    -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+    transition: transform 0.35s, color 0.35s;
+    -webkit-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translate3d(0,10px,0);
+    transform: translate3d(0,10px,0);
+}
+
+figure.effect-sadie:hover h2 {
+    color: #fff;
+    -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+    transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+
+figure.effect-sadie:hover figcaption::before ,
+figure.effect-sadie:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
 
 
 @media screen and (min-width: 600px) {
