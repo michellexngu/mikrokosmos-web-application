@@ -10,7 +10,6 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <meta charset="UTF-8">
     <title>Admin-Page</title>
     <asset:link rel="icon" href="michelle_logo.ico" type="image/x-ico"/>
     <asset:stylesheet src="stylesheet.css"></asset:stylesheet>
@@ -21,14 +20,12 @@
 <tmpl:/navbar whoIsActive="admin"></tmpl:/navbar>
 
 <a href="#list-post" class="skip" tabindex="-1"><g:message code="default.link.skip.label"
-                                                           default="Skip to content&hellip;"/></a>
-
+                                                          default="Skip to content&hellip;"/></a>
 <div class="nav" role="navigation">
     <ul>
         <li><g:link class="create" action="create" controller="post">create new post</g:link></li>
     </ul>
 </div>
-
 <div id="list-post" class="content scaffold-list" role="main">
     <h1>Manage journal entries</h1>
     <g:if test="${flash.message}">

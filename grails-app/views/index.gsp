@@ -21,7 +21,7 @@
             <h1 class="intro-title">mikrokosmos</h1>
 
             <p class="intro-text">
-                shine, dream, smile. let us light up the night
+                shine, dream, smile. let us light up the night, we shine in our own ways, we shine just the way we are tonight.
             </p>
 
             <div class="btn-page-link">

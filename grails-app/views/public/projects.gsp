@@ -24,7 +24,6 @@
         <div class="row">
             <div class="col-sm-8">
                 <figure class="effect-sadie">
-                    %{--                    <img src="https://tympanus.net/Development/HoverEffectIdeas/img/2.jpg" alt="img02"/>--}%
                     <asset:image src="coachingEleven.svg"></asset:image>
                     <figcaption>
                         <h2>Coaching <span>Eleven</span></h2>
@@ -38,7 +37,6 @@
 
             <div class="col-sm-4">
                 <figure class="effect-sadie">
-                    %{--                    <img src="https://tympanus.net/Development/HoverEffectIdeas/img/2.jpg" alt="img02"/>--}%
                     <asset:image src="fairfinder.svg"></asset:image>
                     <figcaption>
                         <h2>Fair <span>Finder</span></h2>
@@ -48,35 +46,20 @@
                     </figcaption>
                 </figure>
             </div>
-
-            %{--            <div class="projectThumbnail medium colOne rowOne" style="background-color:yellow;">--}%
-            %{--                <asset:image src="shooting-star.png"--}%
-            %{--                             class=" col-sm-8 projectThumbnail medium colOne rowOne"></asset:image>--}%
-            %{--            </div>--}%
-
-            %{--            <div class="projectThumbnail small colThree rowOne" style="background-color:orange;">--}%
-            %{--                <asset:image src="profile.jpg" class=" col-sm-4 projectThumbnail medium colOne rowOne" style="height: 314.23px"></asset:image>--}%
-
-            %{--            </div>--}%
-
-            %{--            <div class="projectThumbnail small colOne rowTwo" style="background-color:orange;">--}%
-            %{--                <asset:image src="profile.jpg" class=" col-sm-4 projectThumbnail medium colOne rowOne"></asset:image>--}%
-
-            %{--            </div>--}%
-
-            %{--            <div class="projectThumbnail large colTwo rowTwo" style="background-color:orange;">--}%
-            %{--                <asset:image src="profile.jpg" class=" col-sm-8 projectThumbnail medium colOne rowOne"></asset:image>--}%
-
-            %{--            </div>--}%
-
-
-            %{--            <div class="projectThumbnail small colOne rowThree" style="background-color:orange;">--}%
-            %{--                <asset:image src="profile.jpg" class=" col-sm-4 projectThumbnail medium colOne rowOne"></asset:image>--}%
-
         </div>
 
         <div class="row">
             <div class="col-sm-4">
+                <figure class="effect-sadie">
+                    <asset:image src="cointribute.svg"></asset:image>
+                    <figcaption>
+                        <h2>Coin<span>tribute</span></h2>
+
+                        <p>a design prototype for managing your expenses and do charity.<br>Fall 2017
+                        </p>
+                        <a href="#popup1">View more</a>
+                    </figcaption>
+                </figure>
                 <figure class="effect-sadie">
                     <asset:image src="sorck.svg"></asset:image>
                     <figcaption>
@@ -88,45 +71,54 @@
                     </figcaption>
                 </figure>
             </div>
-            <div class="col-sm-8">
-                <figure class="effect-sadie">
-                    <asset:image src="bjoern.svg"></asset:image>
-                    <figcaption>
-                        <h2>Björn's <span>Elektroapparate</span></h2>
 
-                        <p>a prototype created to help minimize the food waste. <br>Spring 2018</p>
-                        <a href="#">View more</a>
-                    </figcaption>
-                </figure>
+            <div class="col-sm-8">
+                <div class="waagrecht card__face--front">
+                    <figure class="effect-sadie">
+                        <asset:image src="björn.svg"></asset:image>
+                        <figcaption>
+                            <h2>Björn's <span>Elektroapparate</span></h2>
+
+                            <p>a prototype created to help minimize the food waste. <br>Spring 2018</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-4">
-            <figure class="effect-sadie">
-                <asset:image src="cointribute.svg"></asset:image>
-                <figcaption>
-                    <h2>Coin<span>tribute</span></h2>
+    %{-- <div class="row">
+         <div class="scene--card">
+             <figure class="effect-sadie card" style="width: 33.333%">
+                 <figcaption>
+                     <h2>Björn's <span>Elektroapparate</span></h2>
 
-                    <p>a design prototype for managing your expenses and do charity.<br>Fall 2017
-                    </p>
-                    <a href="#">View more</a>
-                </figcaption>
-            </figure>
-        </div>
+                     <p>a prototype created to help minimize the food waste. <br>Spring 2018</p>
+                     <a href="#">View more</a>
+                 </figcaption>
+                 <div class="card__face card__face--front">
+                     <asset:image src="björn.svg"></asset:image>
 
-        <div class="col-sm-4">
-            <asset:image src="profile.jpg"></asset:image>
+                 </div>
+                 <div class="card__face card__face--back"><asset:image src="cointribute.svg"></asset:image></div>
 
-        </div>
+             </figure>
+         </div>
 
-        <div class="col-sm-4">
-            <asset:image src="profile.jpg"></asset:image>
+         <p>Click card to flip.</p>
+     </div>--}%
 
-        </div>
+    %{--        <div id="popup1" class="overlay">--}%
+    %{--            <div class="popup">--}%
+    %{--                <h2>Here i am</h2>--}%
+    %{--                <a class="close" href="#">&times;</a>--}%
 
-    </div>
+    %{--                <div class="content">--}%
+    %{--                    Thank to pop me out of that button, but now i'm done so you can close this window.--}%
+    %{--                </div>--}%
+    %{--            </div>--}%
+    %{--        </div>--}%
 
 </section>
 

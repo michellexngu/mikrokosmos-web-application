@@ -71,6 +71,11 @@ ul.main-nav li.logo {
     color: whitesmoke;
 }
 
+.intro-text {
+    color: whitesmoke;
+    text-align: center;
+}
+
 .btn-page-link {
     border: 2px solid whitesmoke;
     box-sizing: inherit;
@@ -87,18 +92,15 @@ ul.main-nav li.logo {
 }
 
 .btn-page-link .link:hover {
-    color: black;
-}
-
-.btn-page-link a:hover {
-    color: black;
-
+    color: whitesmoke;
 }
 
 .btn-page-link:hover {
-    background: orchid;
+    background: #4b4b4b;
 }
-
+ a, i {
+     color: whitesmoke;
+ }
 
 .flex {
     display: flex;
@@ -117,6 +119,7 @@ ul.main-nav li.logo {
 
 .img-align-profile {
     float: right;
+    width: 500px;
     height: 500px;
     margin-left: 50px;
     margin-bottom: 50px;
@@ -126,6 +129,8 @@ ul.main-nav li.logo {
 img {
     width: 100%;
 }
+
+
 
 .row {
     padding: 0;
@@ -293,6 +298,90 @@ figure.effect-sadie:hover p {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: #06D85F;
+}
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    backface-visibility: hidden;
+}
+
+.card__face--front {
+    background: red;
+}
+
+.card__face--back {
+    background-color: blue;
+    transform: rotateY(180deg);
+}
+
 
 
 
