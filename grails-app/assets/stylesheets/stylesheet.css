@@ -1,6 +1,6 @@
 * {
     /*border-radius: 0 !important;*/
-    /*color: whitesmoke !important;*/
+    color: whitesmoke;
 }
 
 body {
@@ -130,8 +130,6 @@ img {
     width: 100%;
 }
 
-
-
 .row {
     padding: 0;
 }
@@ -153,6 +151,29 @@ img {
     color: whitesmoke;
 }
 
+.banner {
+    height: 240px;
+    background-color: gray;
+}
+.banner-text {
+    font-size: 77px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.blog_body{
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+    height: 3em;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 800px;
+    left: 100px;
+}
+
+.blog-row {
+    padding: 0 5%;
+}
 /*------------------*/
 /***** Project *****/
 /*-----------------*/
@@ -243,6 +264,16 @@ img {
 /***** Sadie *****/
 /*---------------*/
 
+.bg {
+    margin-top: 3em;
+}
+
+.background {
+    margin-top: 317.5px;
+    height: 446px;
+    background: darkgray;
+}
+
 figure.effect-sadie figcaption::before {
     position: absolute;
     top: 0;
@@ -262,11 +293,12 @@ figure.effect-sadie h2 {
     top: 50%;
     left: 0;
     width: 100%;
-    color: #484c61;
+    /*color: #484c61;*/
     -webkit-transition: -webkit-transform 0.35s, color 0.35s;
     transition: transform 0.35s, color 0.35s;
     -webkit-transform: translate3d(0,-50%,0);
     transform: translate3d(0,-50%,0);
+    background: rgba(72,76,97,0.8);
 }
 
 figure.effect-sadie figcaption::before,
@@ -290,6 +322,8 @@ figure.effect-sadie:hover h2 {
     color: #fff;
     -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
     transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+    transition: opacity 0.35s, transform 0.35s;
+    background: none;
 }
 
 figure.effect-sadie:hover figcaption::before ,
@@ -315,75 +349,61 @@ figure.effect-sadie:hover p {
     opacity: 1;
 }
 
-.popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: all 5s ease-in-out;
-}
-
-.popup h2 {
-    margin-top: 0;
+.PostBtn {
+    background: whitesmoke;
+    border: none;
     color: #333;
-    font-family: Tahoma, Arial, sans-serif;
+    text-align: right;
 }
-.popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
+
+th {
+    background-image: none;
+    background-color: transparent;
+}
+
+th:hover, tr:hover {
+    background: #3f3f3f;
+}
+
+.buttons {
+    background-color: transparent;
+}
+
+.buttons a, .nav a {
+    background: whitesmoke;
+    border: none;
     color: #333;
-}
-.popup .close:hover {
-    color: #06D85F;
-}
-.popup .content {
-    max-height: 30%;
-    overflow: auto;
+    height: 30px
 }
 
-.card {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
+.fieldcontain .property-label, .fieldcontain label {
+    color: whitesmoke;
 }
 
-.card.is-flipped {
-    transform: rotateY(180deg);
+.pagination {
+    background-color: transparent;
 }
 
-.card__face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    line-height: 260px;
-    color: white;
+select {
+    color: #3f3f3f;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+
+}
+
+.content h1 {
+    border-bottom: none;
+    font-size: 3em;
     text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-    backface-visibility: hidden;
+}
+.input {
+    width: 50%;
 }
 
-.card__face--front {
-    background: red;
+.modal-body p, .modal-header {
+    color: #3f3f3f;
 }
-
-.card__face--back {
-    background-color: blue;
-    transform: rotateY(180deg);
-}
-
-
-
 
 @media screen and (min-width: 600px) {
 
@@ -391,6 +411,7 @@ figure.effect-sadie:hover p {
         line-height: 18pt;
         position: relative;
     }
+
 
 
 }
