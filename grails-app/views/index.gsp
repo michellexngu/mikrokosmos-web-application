@@ -25,7 +25,7 @@
             </p>
 
             <div class="btn-page-link">
-                <a class="link" href="public/journal">explore my galaxy</a>
+                <a class="link" href="public/index">explore my galaxy</a>
                 <i>-></i>
             </div>
         </div>

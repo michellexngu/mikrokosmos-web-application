@@ -13,8 +13,8 @@ class UrlMappings {
         "404"(view:'/notFound')
         "/public/about"(view:'/public/aboutMe')
         "/public/contact"(view:'/public/contact')
-        "/public/journal"(view:'/public/journal')
+        "/public/index"(view:'/public/index')
         "/public/projects"(view:'/public/projects')
-        "/admin/index"(view:'/admin/index')
+        "/admin/index"(view:'/post/index')
     }
 }
