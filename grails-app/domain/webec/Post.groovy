@@ -8,6 +8,8 @@ class Post {
     Date published
 
     static constraints = {
+        body widget: 'textarea'
+
     }
     static mapping = {
         body type: 'text'
