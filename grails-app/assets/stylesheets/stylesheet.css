@@ -19,7 +19,6 @@ ul.main-nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
 }
 
 ul.main-nav li {
@@ -108,7 +107,7 @@ ul.main-nav li.logo {
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    margin-top: 75%;
+    margin-top: 60%;
 }
 
 #body_align {
@@ -400,9 +399,27 @@ select {
 .input {
     width: 50%;
 }
+textarea, input {
+    color: #3f3f3f;
+}
 
 .modal-body p, .modal-header {
     color: #3f3f3f;
+}
+
+.footer {
+    background: none;
+}
+
+.footer-container {
+    width: 100%;
+    text-align: center;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.footer-container a {
+    margin-bottom: 2em;
 }
 
 @media screen and (min-width: 600px) {
