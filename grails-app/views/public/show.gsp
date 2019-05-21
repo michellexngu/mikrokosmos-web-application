@@ -40,10 +40,9 @@
 
     <div class="comment-section">
             <h4>Comments</h4>
-            <g:each in="${webec.Comment.list()}" var="comments">
+            <g:each in="${postList}" var="comments">
                 <p>Author: ${comments.author}
                     Comment: ${comments.body}
-                    Published: ${comments.posted}
                     </p>
             </g:each>
             <g:form controller="comment" action="save">
