@@ -6,6 +6,7 @@ class Post {
     String author
     Date created = new Date()
     Date published
+    //Comment comment
 
     static constraints = {
         body widget: 'textarea'

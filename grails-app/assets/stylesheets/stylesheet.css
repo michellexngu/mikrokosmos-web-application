@@ -97,9 +97,10 @@ ul.main-nav li.logo {
 .btn-page-link:hover {
     background: #4b4b4b;
 }
- a, i {
-     color: whitesmoke;
- }
+
+a, i {
+    color: whitesmoke;
+}
 
 .flex {
     display: flex;
@@ -154,13 +155,14 @@ img {
     height: 240px;
     background-color: gray;
 }
+
 .banner-text {
     font-size: 77px;
     text-align: center;
     vertical-align: middle;
 }
 
-.blog_body{
+.blog_body {
     text-overflow: ellipsis;
     line-height: 1.5em;
     height: 3em;
@@ -173,6 +175,7 @@ img {
 .blog-row {
     padding: 0 5%;
 }
+
 /*------------------*/
 /***** Project *****/
 /*-----------------*/
@@ -209,14 +212,14 @@ img {
 .col-sm-8 figure figcaption::before,
 .col-sm-8 figure figcaption::after,
 .col-sm-4 figure figcaption::before,
-.col-sm-4 figure figcaption::before{
+.col-sm-4 figure figcaption::before {
     pointer-events: none;
 }
 
 .col-sm-8 figure figcaption,
 .col-sm-8 figure figcaption > a,
 .col-sm-4 figure figcaption,
-.col-sm-4 figure figcaption > a{
+.col-sm-4 figure figcaption > a {
     position: absolute;
     top: 0;
     left: 0;
@@ -227,7 +230,7 @@ img {
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
 .col-sm-8 figure figcaption > a,
-.col-sm-4 figure figcaption > a{
+.col-sm-4 figure figcaption > a {
     z-index: 1000;
     text-indent: 200%;
     white-space: nowrap;
@@ -236,25 +239,25 @@ img {
 }
 
 .col-sm-8 figure h2,
-.col-sm-4 figure h2{
+.col-sm-4 figure h2 {
     word-spacing: -0.15em;
     font-weight: 300;
 }
 
 .col-sm-8 figure h2 span,
-.col-sm-4 figure h2 span{
+.col-sm-4 figure h2 span {
     font-weight: 800;
 }
 
 .col-sm-8 figure h2,
 .col-sm-8 figure p,
 .col-sm-4 figure h2,
-.col-sm-4 figure p{
+.col-sm-4 figure p {
     margin: 0;
 }
 
 .col-sm-8 figure p,
-.col-sm-4 figure p{
+.col-sm-4 figure p {
     letter-spacing: 1px;
     font-size: 68.5%;
 }
@@ -279,12 +282,12 @@ figure.effect-sadie figcaption::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
-    background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+    background: -webkit-linear-gradient(top, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+    background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
     content: '';
     opacity: 0;
-    -webkit-transform: translate3d(0,50%,0);
-    transform: translate3d(0,50%,0);
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
 }
 
 figure.effect-sadie h2 {
@@ -295,9 +298,9 @@ figure.effect-sadie h2 {
     /*color: #484c61;*/
     -webkit-transition: -webkit-transform 0.35s, color 0.35s;
     transition: transform 0.35s, color 0.35s;
-    -webkit-transform: translate3d(0,-50%,0);
-    transform: translate3d(0,-50%,0);
-    background: rgba(72,76,97,0.8);
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    background: rgba(72, 76, 97, 0.8);
 }
 
 figure.effect-sadie figcaption::before,
@@ -313,23 +316,23 @@ figure.effect-sadie p {
     padding: 2em;
     width: 100%;
     opacity: 0;
-    -webkit-transform: translate3d(0,10px,0);
-    transform: translate3d(0,10px,0);
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
 }
 
 figure.effect-sadie:hover h2 {
     color: #fff;
-    -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
-    transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+    -webkit-transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+    transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
     transition: opacity 0.35s, transform 0.35s;
     background: none;
 }
 
-figure.effect-sadie:hover figcaption::before ,
+figure.effect-sadie:hover figcaption::before,
 figure.effect-sadie:hover p {
     opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 .overlay {
@@ -343,6 +346,7 @@ figure.effect-sadie:hover p {
     visibility: hidden;
     opacity: 0;
 }
+
 .overlay:target {
     visibility: visible;
     opacity: 1;
@@ -396,9 +400,11 @@ select {
     font-size: 3em;
     text-align: center;
 }
+
 .input {
     width: 50%;
 }
+
 textarea, input {
     color: #3f3f3f;
 }
@@ -422,13 +428,17 @@ textarea, input {
     margin-bottom: 2em;
 }
 
+.comment-section {
+    float: left;
+    margin-left: 50px
+}
+
 @media screen and (min-width: 600px) {
 
     section {
         line-height: 18pt;
         position: relative;
     }
-
 
 
 }
