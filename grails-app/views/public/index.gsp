@@ -25,8 +25,9 @@
     </div>
 </div>--}%
 
+
 <div id="content_blog" role="main">
-    <section class="row">
+    <section class="row blogpost">
 
         <g:each var="post" in="${postList}">
             <h1>${post.title}</h1>

@@ -13,7 +13,7 @@ class BootStrap {
         Date date = new Date() - 3
 
         // add initial posts
-new Post(title: 'Test', body: 'Lorem Ipsum', author: 'Siv Elin', created: date, published: date).save()
+        new Post(title: 'Test', body: 'Lorem Ipsum', author: 'Siv Elin', created: date, published: date).save()
         //save(testPost)
 
 //        // add initial comments

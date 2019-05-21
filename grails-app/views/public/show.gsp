@@ -55,8 +55,7 @@
                 </fieldset>
                 <br>
                 <fieldset>
-                    <g:submitButton name="create" class="PostBtn"/>
-                    %{--                                value="Comment"/>--}%
+                    <g:submitButton name="create" class="PostBtn" value="Comment"/>
                 </fieldset>
             </g:form>
         </div>

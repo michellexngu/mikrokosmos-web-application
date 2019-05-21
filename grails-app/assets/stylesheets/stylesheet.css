@@ -433,6 +433,9 @@ textarea, input {
     margin-left: 50px
 }
 
+.blogpost {
+    padding-left: 50px;
+}
 @media screen and (min-width: 600px) {
 
     section {
