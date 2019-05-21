@@ -32,23 +32,34 @@
 
     <div id="body_align">
         <p>${post.body}</p>
+
         <p>Written by: ${post.author}</p>
         <br>
-        <h4>Comments</h4>
-        <g:form controller="comment" action="save">
-            <fieldset class="form">
-                Name:<br>
-                <input type="text" name="author">
-                <textarea name="body" rows="10" cols="30" placeholder="Share your thoughts..."></textarea>
-                <input type="hidden" name="post" value="${post.id}"/>
-            </fieldset>
-            <br>
-            <fieldset>
-                <g:submitButton name="create" class="PostBtn" />
-                %{--                                value="Comment"/>--}%
-            </fieldset>
-        </g:form>
     </div>
+
+
+    <div class="comment-section">
+            <h4>Comments</h4>
+            <g:each in="${webec.Comment.list()}" var="comments">
+                <p>Author: ${comments.author}
+                    Comment: ${comments.body}
+                    Published: ${comments.posted}
+                    </p>
+            </g:each>
+            <g:form controller="comment" action="save">
+                <fieldset class="form">
+                    Name:<br>
+                    <input type="text" name="author">
+                    <textarea name="body" rows="10" cols="30" placeholder="Share your thoughts..."></textarea>
+                    <input type="hidden" name="post" value="${post.id}"/>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <g:submitButton name="create" class="PostBtn"/>
+                    %{--                                value="Comment"/>--}%
+                </fieldset>
+            </g:form>
+        </div>
 </div>
 </body>
 </html>
