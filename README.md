@@ -29,7 +29,7 @@ project description:      (if other than `index.html` in project root directory)
 
 External contributions: Inspirations from W3Schools and snippets from CodePen, icons from fontawesome.com
 
-Other comments: 
+Other comments: no initial comment created, needs to be created in order to display the function
 
 I'm particular proud of: I am particulary proud of my self-created logo and the user interface.
 I have put a lot of effort and time into the styling of the application and I am very happy how it turned out.

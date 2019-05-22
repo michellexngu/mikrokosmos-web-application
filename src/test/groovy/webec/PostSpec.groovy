@@ -27,7 +27,7 @@ class PostSpec extends Specification implements DomainUnitTest<Post> {
         posts.size() == 1
     }
 
-    void "test validity of form and if not valid nothing would be safed"() {
+    void "test validity of form and if not valid nothing would be saved"() {
         when:
     new Post(title: "",
              body: body,
