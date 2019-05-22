@@ -10,8 +10,6 @@
 <head>
     <meta name="layout" content="main">
     <title>about me</title>
-    <asset:stylesheet src="stylesheet.css"></asset:stylesheet>
-    <asset:link rel="icon" href="michelle_logo.ico" type="image/x-ico"/>
 </head>
 
 <body>

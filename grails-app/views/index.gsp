@@ -26,10 +26,12 @@
 
             <div class="btn-page-link">
                 <a class="link" href="public/index">explore my galaxy</a>
-                <i>-></i>
+                <i class="fas fa-arrow-right"></i>
+
             </div>
         </div>
     </div>
+
     <div class="col-sm-4"></div>
 
 </div>

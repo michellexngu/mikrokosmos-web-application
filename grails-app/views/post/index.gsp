@@ -11,8 +11,6 @@
 <head>
     <meta name="layout" content="main"/>
     <title>Admin-Page</title>
-    <asset:link rel="icon" href="michelle_logo.ico" type="image/x-ico"/>
-    <asset:stylesheet src="stylesheet.css"></asset:stylesheet>
     <g:set var="entityName" value="${message(code: 'post.label', default: 'Post')}"/>
 </head>
 
@@ -22,12 +20,7 @@
 <a href="#list-post" class="skip" tabindex="-1"><g:message code="default.link.skip.label"
                                                            default="Skip to content&hellip;"/></a>
 
-<div class="nav" role="navigation">
-    <ul>
-        <li><g:link class="PostBtn" action="create" controller="post"><g:message code="default.new.label"
-                                                                                args="[entityName]"/></g:link></li>
-    </ul>
-</div>
+
 
 <div id="list-post" class="content scaffold-list" role="main">
     <h1><g:message code="default.list.label" args="[entityName]"/></h1>
@@ -48,6 +41,13 @@
 
     <div class="pagination">
         <g:paginate total="${postCount ?: 0}"/>
+    </div>
+
+    <div class="nav" role="navigation">
+        <ul>
+            <li><g:link class="PostBtn" action="create" controller="post"><g:message code="default.new.label"
+                                                                                     args="[entityName]"/></g:link></li>
+        </ul>
     </div>
 </div>
 </body>

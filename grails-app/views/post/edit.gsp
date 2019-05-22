@@ -11,7 +11,6 @@
 <head>
     <meta name="layout" content="main"/>
     <g:set var="entityName" value="${message(code: 'post.label', default: 'Post')}"/>
-    <asset:stylesheet src="stylesheet.css"></asset:stylesheet>
     <title><g:message code="default.edit.label" args="[entityName]"/></title>
 </head>
 

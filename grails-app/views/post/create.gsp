@@ -12,8 +12,7 @@
     <meta name="layout" content="main"/>
     <g:set var="entityName" value="${message(code: 'post.label', default: 'Post')}"/>
     <title><g:message code="default.create.label" args="[entityName]"/></title>
-    <asset:stylesheet src="stylesheet.css"></asset:stylesheet>
-    <asset:link rel="icon" href="michelle_logo.ico" type="image/x-ico"/>
+
 </head>
 <body>
 <tmpl:/navbar whoIsActive="admin"></tmpl:/navbar>
@@ -46,9 +45,9 @@
             <f:all order="author,title,body,created,published" bean="post"/>
         </fieldset>
         <fieldset class="buttons">
-            <g:submitButton name="create" class="save"
+            <g:submitButton name="create"
                             value="${message(code: 'default.button.create.label', default: 'Create')}"
-                            style="background: whitesmoke; border: none; color: #333; height:30px"/>
+                            style="background: whitesmoke; border: none; color: #333; height:30px; width: auto"/>
         </fieldset>
     </g:form>
 </div>

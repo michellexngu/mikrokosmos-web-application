@@ -12,8 +12,6 @@
     <meta name="layout" content="main"/>
     <g:set var="entityName" value="${message(code: 'post.label', default: 'Post')}"/>
     <title><g:message code="default.show.label" args="[entityName]"/></title>
-    <asset:stylesheet src="stylesheet.css"></asset:stylesheet>
-
 </head>
 
 <body>
@@ -44,7 +42,7 @@
             <input class="PostBtn" type="submit"
                    value="${message(code: 'default.button.delete.label', default: 'Delete')}"
                    onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');"
-                   style="background: #ffd6d1; border: none; color: #333; height:30px"/>
+                   style="background: whitesmoke; border: none; color: #333; height:30px; width: auto"/>
         </fieldset>
     </g:form>
 </div>
