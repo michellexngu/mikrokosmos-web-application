@@ -25,7 +25,7 @@ img {
 .link:hover {
     text-decoration: underline;
 }
-.hero {
+.gradient-bg {
     display: flow-root;
     text-align: center;
     background: linear-gradient(-45deg, #161639, #1d366c, #1d558a, #185fc2);
@@ -70,18 +70,18 @@ img {
         background-position: 0% 50%
     }
 }
-.hero-title {
+.description-title {
     margin-top: 7rem;
     margin-bottom: 7rem;
     font-size: 5rem;
     line-height: 1;
     color: hsla(0, 100%, 100%, .75);
 }
-.hero-lead {
+.description-lead {
     font-size: 1.2rem;
     color: white;
 }
-.hero-image {
+.description-image {
     border-radius: 4px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
