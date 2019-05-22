@@ -41,7 +41,7 @@
     <div class="comment-section row">
         <div class="col-lg-8">
             <h4>Comments</h4>
-            <g:each in="${webec.Comment.list()}" var="comments">
+            <g:each in="${webec.Comment.findAllByPost(post)}" var="comments">
                 <p>${comments.author}:
                 ${comments.body}
                 </p>
@@ -53,7 +53,7 @@
                     Comment: <br>
                     <textarea class="input-align" name="body" rows="10" cols="30"
                               placeholder="Share your thoughts..."></textarea>
-                    <input type="hidden" name="post" value="${webec.Post.list().id}"/>
+                    <input type="hidden" name="post" value="${post.id}"/>
                 </fieldset>
                 <br>
                 <fieldset class="form-comment">

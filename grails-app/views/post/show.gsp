@@ -20,7 +20,7 @@
                                                            default="Skip to content&hellip;"/></a>
 
 <div class="nav" role="navigation">
-    <ul>
+    <ul class="nav-ul">
         <li><g:link class="PostBtn" action="index" controller="post"><g:message code="default.list.label"
                                                                                  args="[entityName]"/></g:link></li>
         <li><g:link class="PostBtn" action="create"><g:message code="default.new.label"

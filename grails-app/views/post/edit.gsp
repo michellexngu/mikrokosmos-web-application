@@ -48,9 +48,9 @@
             <f:all order="author,title,body,created,published" bean="post"/>
         </fieldset>
         <fieldset class="buttons">
-            <input class="save" type="submit"
+            <input type="submit"
                    value="${message(code: 'default.button.update.label', default: 'Update')}"
-                   style="background: #ffd6d1; border: none; color: #333; height:30px"/>
+                   style="background: whitesmoke; border: none; color: #333; height:30px; width: auto"/>
         </fieldset>
     </g:form>
 </div>

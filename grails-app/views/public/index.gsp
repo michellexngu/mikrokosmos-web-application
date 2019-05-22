@@ -32,7 +32,7 @@
 
             <p class="journal-body">${post.body}</p>
             <g:link controller="public" action="show" id="${post.id}"><button
-                    class="btn readMoreBtn">Read More</button>
+                    class="readMoreBtn">Read More</button>
             </g:link>
         </g:each>
 

@@ -6,6 +6,7 @@ import spock.lang.Specification
 class PostSpec extends Specification implements DomainUnitTest<Post> {
 
     def setup() {
+
     }
 
     def cleanup() {

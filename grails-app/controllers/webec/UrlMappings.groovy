@@ -16,5 +16,6 @@ class UrlMappings {
         "/public/index"(view:'/public/index')
         "/public/projects"(view:'/public/projects')
         "/admin/index"(view:'/post/index')
+        "/comment/show"(view:'/comment/show')
     }
 }
