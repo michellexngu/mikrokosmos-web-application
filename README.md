@@ -3,6 +3,7 @@
 ## Commit Proposal
 
 Matriculation Number: <17-550-096>
+Email: michelle.ngu@students.fhnw.ch
 
 Project idea short description: 
 
