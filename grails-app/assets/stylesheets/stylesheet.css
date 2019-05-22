@@ -1,6 +1,11 @@
+/*---------------*/
+/**** General*****/
+/*---------------*/
+
 * {
     /*border-radius: 0 !important;*/
     color: whitesmoke;
+    font-family: "Lato", "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -12,6 +17,7 @@ body {
     background-position: center;
     /*background: whitesmoke;*/
     color: #161639;
+    padding-bottom: 5%;
 }
 
 ul.main-nav {
@@ -34,37 +40,63 @@ ul.main-nav li a {
 }
 
 ul.main-nav li a:hover:not(.active) {
-    background-color: #161639;
+    border-bottom: 3px whitesmoke solid;
+    transition: all .1s;
 }
 
 ul.main-nav li a.active {
-    background-color: #161639;
+    border-bottom: 3px whitesmoke solid;
 }
 
 ul.main-nav li.logo {
     float: left;
 }
 
-.title {
+
+a, i {
     color: whitesmoke;
 }
 
-.canvas-container {
-    background: #7c7c7c no-repeat 50% 30%;
-    margin-bottom: 20px;
-    color: white;
-    height: 300px;
-    text-align: center;
+
+img {
+    width: 100%;
 }
 
-.canvas_pic {
-    width: 100%;
+.row {
+    padding: 0;
 }
 
 .m_logo_small {
     width: 25px;
     height: 25px;
 }
+
+th {
+    background-image: none;
+    background-color: transparent;
+}
+
+th:hover, tr:hover {
+    background: #3f3f3f;
+}
+
+select {
+    color: #3f3f3f;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+
+}
+
+.content h1 {
+    border-bottom: none;
+    font-size: 3em;
+    text-align: center;
+}
+
+/*---------------*/
+/***** HOME  *****/
+/*---------------*/
 
 .intro-title {
     color: whitesmoke;
@@ -73,6 +105,7 @@ ul.main-nav li.logo {
 .intro-text {
     color: whitesmoke;
     text-align: center;
+    margin: 1em 0 2em 0;
 }
 
 .btn-page-link {
@@ -82,7 +115,7 @@ ul.main-nav li.logo {
     font-size: 13pt;
     transition: all .5s;
     cursor: pointer;
-    padding: 12px 50px 12px 20px;
+    padding: 12px 20px 12px 20px;
 }
 
 .btn-page-link .link {
@@ -90,16 +123,13 @@ ul.main-nav li.logo {
 
 }
 
-.btn-page-link .link:hover {
+.btn-page-link .link:hover, .PostBtn:hover {
     color: whitesmoke;
 }
 
-.btn-page-link:hover {
+.btn-page-link:hover, .PostBtn:hover {
     background: #4b4b4b;
-}
-
-a, i {
-    color: whitesmoke;
+    transition: all .7s ease;
 }
 
 .flex {
@@ -111,45 +141,27 @@ a, i {
     margin-top: 60%;
 }
 
+/*---------------*/
+/***** PUBLIC *****/
+/*---------------*/
+
 #body_align {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 30px;
 }
 
-.img-align-profile {
-    float: right;
-    width: 500px;
-    height: 500px;
-    margin-left: 50px;
-    margin-bottom: 50px;
-
-}
-
-img {
-    width: 100%;
-}
-
-.row {
-    padding: 0;
-}
-
 .small {
     width: 33%;
 }
 
-.col-sm-4, .col-sm-8 {
-    padding: 0;
+.journal-entry-body {
+    text-align: justify;
 }
 
-.intro-container {
-    display: table-cell;
-    vertical-align: bottom;
-}
-
-.about-text {
-    color: whitesmoke;
-}
+/*------------------*/
+/***** JOURNAL *****/
+/*-----------------*/
 
 .banner {
     height: 240px;
@@ -162,7 +174,7 @@ img {
     vertical-align: middle;
 }
 
-.blog_body {
+.journal-body {
     text-overflow: ellipsis;
     line-height: 1.5em;
     height: 3em;
@@ -176,10 +188,58 @@ img {
     padding: 0 5%;
 }
 
+.comment-section {
+    float: left;
+    width: 100%;
+    margin-left: 37px;
+}
+
+.form-comment {
+    margin: 0;
+
+}
+
+.input-align {
+    width: 75%;
+}
+
+.journal-entry {
+    padding-left: 50px;
+}
+
+.readMoreBtn {
+    color: #3f3f3f;
+}
+
+.readMoreBtn:hover, .commen {
+    background: #3f3f3f;
+    color: whitesmoke;
+    transition: 0.7s;
+}
+
 /*------------------*/
-/***** Project *****/
+/***** PROJECT *****/
 /*-----------------*/
 
+.col-sm-4, .col-sm-8 {
+    padding: 0;
+}
+
+.moreProject {
+    line-height: 15px;
+    font-size: 3em;
+    top: 30px;
+}
+
+.background {
+    margin-top: 317.5px;
+    height: 446px;
+    background: darkgray;
+}
+
+.modal-body p, .modal-header {
+    color: #3f3f3f;
+}
 
 /* Common style */
 .col-sm-8 figure, .col-sm-4 figure {
@@ -266,16 +326,6 @@ img {
 /***** Sadie *****/
 /*---------------*/
 
-.bg {
-    margin-top: 3em;
-}
-
-.background {
-    margin-top: 317.5px;
-    height: 446px;
-    background: darkgray;
-}
-
 figure.effect-sadie figcaption::before {
     position: absolute;
     top: 0;
@@ -335,38 +385,19 @@ figure.effect-sadie:hover p {
     transform: translate3d(0, 0, 0);
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-}
-
-.overlay:target {
-    visibility: visible;
-    opacity: 1;
-}
+/*---------------*/
+/***** POST *****/
+/*---------------*/
 
 .PostBtn {
     background: whitesmoke;
     border: none;
     color: #333;
-    text-align: right;
+    text-align: center;
+    max-width: 100px;
+    border-radius: 1em;
 }
 
-th {
-    background-image: none;
-    background-color: transparent;
-}
-
-th:hover, tr:hover {
-    background: #3f3f3f;
-}
 
 .buttons {
     background-color: transparent;
@@ -383,22 +414,12 @@ th:hover, tr:hover {
     color: whitesmoke;
 }
 
+fieldset {
+    margin: 0.6em 1.25em 0 19.25em;
+}
+
 .pagination {
     background-color: transparent;
-}
-
-select {
-    color: #3f3f3f;
-    height: 40px;
-    padding-left: 10px;
-    font-size: 16px;
-
-}
-
-.content h1 {
-    border-bottom: none;
-    font-size: 3em;
-    text-align: center;
 }
 
 .input {
@@ -407,14 +428,42 @@ select {
 
 textarea, input {
     color: #3f3f3f;
+    width: 26.5%;
 }
 
-.modal-body p, .modal-header {
-    color: #3f3f3f;
+.buttons .save {
+    background-image: none;
 }
+
+/*------------------*/
+/***** ABOUT *****/
+/*-----------------*/
+
+.title {
+    color: whitesmoke;
+}
+
+.about-text {
+    color: whitesmoke;
+}
+
+.img-align-profile {
+    float: right;
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+
+}
+
+/*------------------*/
+/****** FOOTER ******/
+/*-----------------*/
 
 .footer {
     background: none;
+    width: 50%;
+    margin-left: 25%;
 }
 
 .footer-container {
@@ -424,18 +473,10 @@ textarea, input {
     margin-block-end: 0px;
 }
 
-.footer-container a {
-    margin-bottom: 2em;
+.errors li {
+    color: #3f3f3f;
 }
 
-.comment-section {
-    float: left;
-    margin-left: 50px
-}
-
-.blogpost {
-    padding-left: 50px;
-}
 @media screen and (min-width: 600px) {
 
     section {
