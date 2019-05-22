@@ -56,7 +56,7 @@ class AdminSpec extends GebSpec {
         when: "edit existing post"
         $("form").author = "Vivi"
         $("form").title = "My updated Post"
-        $("form").body = "blablablablablbalbalbalbalblblabla"
+        $("form").body = "If this text is displayed, then the edit method is working and all changes are successfully being saved"
 
         $("input", type: "submit").click()
         then: "successful updated post"
