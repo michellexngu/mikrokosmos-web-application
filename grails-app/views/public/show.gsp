@@ -1,17 +1,8 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: michellengu
-  Date: 2019-05-19
-  Time: 01:10
---%>
-
-<%@ page contentType="text/html;charset=UTF-8" %>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="layout" content="main"/>
-    <meta charset="UTF-8">
-    <title>Blog Post</title>
+    <title>journal entries</title>
     <asset:link rel="icon" href="vaicon.ico" type="image/x-ico"/>
     <asset:stylesheet src="bootstrap.css"/>
     <asset:stylesheet src="stylesheet.css"/>
@@ -46,6 +37,7 @@
                 ${comments.body}
                 </p>
             </g:each>
+
             <g:form controller="comment" action="save">
                 <fieldset class="form form-comment">
                     Name:<br>

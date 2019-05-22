@@ -1,19 +1,12 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: michellengu
-  Date: 2019-04-26
-  Time: 17:42
---%>
-
-<%@ page contentType="text/html;charset=UTF-8" %>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="layout" content="main"/>
     <g:set var="entityName" value="${message(code: 'post.label', default: 'Post')}"/>
     <title><g:message code="default.create.label" args="[entityName]"/></title>
 
 </head>
+
 <body>
 <tmpl:/navbar whoIsActive="admin"></tmpl:/navbar>
 

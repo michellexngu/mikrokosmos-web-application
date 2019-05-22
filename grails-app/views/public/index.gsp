@@ -1,28 +1,15 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: michellengu
-  Date: 2019-05-14
-  Time: 20:13
---%>
-
-<%@ page contentType="text/html;charset=UTF-8" %>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta name="layout" content="main">
     <title>journal</title>
-    <asset:stylesheet src="stylesheet.css"></asset:stylesheet>
     <asset:stylesheet src="bootstrap.css"/>
+    <asset:stylesheet src="stylesheet.css"></asset:stylesheet>
     <g:set var="entityName" value="${message(code: 'post.label', default: 'Post')}"/>
 </head>
 
 <body>
 <tmpl:/navbar whoIsActive="journal"></tmpl:/navbar>
-
-%{--<div class="svg" role="presentation">
-    <div class="banner">
-    </div>
-</div>--}%
-
 
 <div id="content_blog" role="main">
     <section class="row journal-entry">

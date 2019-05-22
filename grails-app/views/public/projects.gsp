@@ -1,12 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: michellengu
-  Date: 2019-05-14
-  Time: 20:22
---%>
-
-<%@ page contentType="text/html;charset=UTF-8" %>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta name="layout" content="main">
     <title>projects</title>
@@ -15,7 +8,6 @@
 
 <body>
 <tmpl:/navbar whoIsActive="projects"></tmpl:/navbar>
-
 
 <section>
     <div class="project-container">
@@ -63,17 +55,17 @@
                     </figcaption>
                 </figure>
 
-                    <figure class="effect-sadie">
-                        <asset:image src="sorck.svg"></asset:image>
-                        <figcaption>
-                            <h2>SORCK<span>Schema</span></h2>
+                <figure class="effect-sadie">
+                    <asset:image src="sorck.svg"></asset:image>
+                    <figcaption>
+                        <h2>SORCK<span>Schema</span></h2>
 
-                            <p>a design prototype for psycho therapist to help ease their meeting with their clients.<br>Spring 2018
+                        <p>a design prototype for psycho therapist to help ease their meeting with their clients.<br>Spring 2018
                             <br>
-                                <a data-toggle="modal"
-                                data-target="#sorck-info">view more</a><br></p>
-                        </figcaption>
-                    </figure>
+                            <a data-toggle="modal"
+                               data-target="#sorck-info">view more</a><br></p>
+                    </figcaption>
+                </figure>
             </div>
 
             <div class="col-sm-8">
@@ -92,11 +84,12 @@
     </div>
 
     <div class="container">
-        <!-- Modal -->
+
+        <!-- Modal Coachingeleven-->
         <div class="modal fade" id="coachingeleven-info" role="dialog">
             <div class="modal-dialog modal-lg">
 
-                <!-- Modal content-->
+                <!-- Modal Coachingeleven content-->
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -109,17 +102,17 @@
                         In their work, football coaches make extensive use of statistics, but both entering data and fighting
                         through Excel sheets to extract the desired information can be bothersome.
                         An application where the ressources of the coaches can be used fully.</p>
-%{--%                        <asset:image src="coachingElevenImg.svg"></asset:image>--}%
                     </div>
                 </div>
 
             </div>
         </div>
 
+        <!-- Modal FairFinder-->
         <div class="modal fade" id="fairfinder-info" role="dialog">
             <div class="modal-dialog modal-lg">
 
-                <!-- Modal content-->
+                <!-- Modal FairFinder content-->
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -136,10 +129,11 @@
             </div>
         </div>
 
+        <!-- Modal Cointribute-->
         <div class="modal fade" id="cointribute-info" role="dialog">
             <div class="modal-dialog modal-lg">
 
-                <!-- Modal content-->
+                <!-- Modal Cointribute content-->
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -158,10 +152,11 @@
             </div>
         </div>
 
+        <!-- Modal SORCK-->
         <div class="modal fade" id="sorck-info" role="dialog">
             <div class="modal-dialog modal-lg">
 
-                <!-- Modal content-->
+                <!-- Modal SORCK content-->
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -180,10 +175,11 @@
             </div>
         </div>
 
+        <!-- Modal Bjoern's Elektrotechnik-->
         <div class="modal fade" id="bjoern-info" role="dialog">
             <div class="modal-dialog modal-lg">
 
-                <!-- Modal content-->
+                <!-- Modal Bjoern's Elektrotechnik-->
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>

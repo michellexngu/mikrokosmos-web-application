@@ -1,11 +1,9 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
     <meta name="layout" content="main"/>
-    <meta charset="UTF-8">
-    <title>My Mikrokosmos</title>
+    <title>my mikrokosmos</title>
     <asset:stylesheet src="bootstrap.css"/>
-    <asset:stylesheet src="stylesheet.css"></asset:stylesheet>
     <asset:link rel="icon" href="michelle_logo.ico" type="image/x-ico"/>
 </head>
 

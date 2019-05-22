@@ -12,9 +12,8 @@ class HomeSpec extends GebSpec {
     void "test navigation on app start"() {
         when: "starting the app"
         go '/'
-        then:
-        title == "My Mikrokosmos"
-
+        then: 'display home page'
+        title == "my mikrokosmos"
     }
 
 }

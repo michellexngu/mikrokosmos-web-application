@@ -1,6 +1,7 @@
 package webec
 
 class Post {
+
     String title
     String body
     String author

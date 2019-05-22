@@ -1,13 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: michellengu
-  Date: 2019-04-26
-  Time: 16:39
---%>
-
-<%@ page contentType="text/html;charset=UTF-8" %>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="layout" content="main"/>
     <title>Admin-Page</title>
@@ -19,7 +11,6 @@
 
 <a href="#list-post" class="skip" tabindex="-1"><g:message code="default.link.skip.label"
                                                            default="Skip to content&hellip;"/></a>
-
 
 
 <div id="list-post" class="content scaffold-list" role="main">

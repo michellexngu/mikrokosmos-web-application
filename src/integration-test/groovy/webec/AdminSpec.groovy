@@ -22,7 +22,7 @@ class AdminSpec extends GebSpec {
         then: "admin page is displayed"
         title == "Admin-Page"
 
-        when: "create new post"
+        when: "go to create new post"
         $("a", text: "New Post").click()
         then: "redirect to create post"
         title == "Create Post"

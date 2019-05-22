@@ -9,7 +9,7 @@ import grails.testing.mixin.integration.Integration
 @Integration
 class ProjectSpec extends GebSpec {
 
-        void "test navigation projects"() {
+    void "test navigation projects"() {
         when: "going to projects"
         go '/public/projects'
         then:

@@ -1,12 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: michellengu
-  Date: 2019-05-13
-  Time: 22:22
---%>
-
-<%@ page contentType="text/html;charset=UTF-8" %>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta name="layout" content="main">
     <title>about me</title>
@@ -29,6 +22,7 @@
     to become an avid member of this community.
     </p>
     <br/>
+
     <p class="about-text">With every project I begin with an open, curious and empathetic mind in an attempt to
     understand the problem from every perspective. To further understand these design needs, and to ultimately
     find a fitting solution, I like to do a lot of learning by iteration and prototyping. This also allows me
@@ -36,6 +30,7 @@
     allows me to offer an intelligent rationale behind every decision.
     </p>
     <br/>
+
     <p class="about-text">Outside of my work, I try to expand my horizon through new experiences while taking every
     opportunity to learn from them. I do this because I think that the best designers don’t understand just design
     alone, but understand the world and people in it; the thing that we are ultimately designing for.</p>

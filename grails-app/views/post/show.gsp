@@ -1,13 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: michellengu
-  Date: 2019-04-26
-  Time: 17:42
---%>
-
-<%@ page contentType="text/html;charset=UTF-8" %>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="layout" content="main"/>
     <g:set var="entityName" value="${message(code: 'post.label', default: 'Post')}"/>
@@ -22,7 +14,7 @@
 <div class="nav" role="navigation">
     <ul class="nav-ul">
         <li><g:link class="PostBtn" action="index" controller="post"><g:message code="default.list.label"
-                                                                                 args="[entityName]"/></g:link></li>
+                                                                                args="[entityName]"/></g:link></li>
         <li><g:link class="PostBtn" action="create"><g:message code="default.new.label"
                                                                args="[entityName]"/></g:link></li>
 
@@ -38,7 +30,7 @@
     <g:form resource="${this.post}" method="DELETE">
         <fieldset class="buttons">
             <g:link class="PostBtn" action="edit" resource="${this.post}"><g:message code="default.button.edit.label"
-                                                                                  default="Edit"/></g:link>
+                                                                                     default="Edit"/></g:link>
             <input class="PostBtn" type="submit"
                    value="${message(code: 'default.button.delete.label', default: 'Delete')}"
                    onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');"

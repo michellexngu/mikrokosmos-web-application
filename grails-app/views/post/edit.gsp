@@ -1,13 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: michellengu
-  Date: 2019-04-26
-  Time: 17:42
---%>
-
-<%@ page contentType="text/html;charset=UTF-8" %>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta name="layout" content="main"/>
     <g:set var="entityName" value="${message(code: 'post.label', default: 'Post')}"/>
@@ -23,9 +15,9 @@
 <div class="nav" role="navigation">
     <ul>
         <li><g:link class="PostBtn" action="index" controller="post"><g:message code="default.list.label"
-                                                                              args="[entityName]"/></g:link></li>
+                                                                                args="[entityName]"/></g:link></li>
         <li><g:link class="PostBtn" action="create"><g:message code="default.new.label"
-                                                              args="[entityName]"/></g:link></li>
+                                                               args="[entityName]"/></g:link></li>
     </ul>
 </div>
 

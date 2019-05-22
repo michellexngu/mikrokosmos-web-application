@@ -57,6 +57,10 @@ a, i {
     color: whitesmoke;
 }
 
+a:hover {
+    color: whitesmoke;
+}
+
 
 img {
     width: 100%;
@@ -125,6 +129,7 @@ select {
 
 .btn-page-link .link {
     text-decoration: none;
+    color: whitesmoke;
 
 }
 

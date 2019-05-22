@@ -27,12 +27,15 @@ How to test the project:  (if other than `grailsw test-app`)
 Hand-written, static HTML 
 project description:      (if other than `index.html` in project root directory)
 
-External contributions:
+External contributions: Inspirations from W3Schools and snippets from CodePen, icons from fontawesome.com
 
 Other comments: 
 
-I'm particular proud of:
-
+I'm particular proud of: I am particulary proud of my self-created logo and the user interface.
+I have put a lot of effort and time into the styling of the application and I am very happy how it turned out.
+The design of the application was inspired from my interest to stars and the galaxy. I believe that everyone living
+in this cosmos has their own mikrokosmos.
+I have learned the importance of the MVC.
 
 ## Project grading 
 

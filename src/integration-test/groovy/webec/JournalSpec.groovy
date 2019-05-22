@@ -10,10 +10,11 @@ import grails.testing.mixin.integration.Integration
 class JournalSpec extends GebSpec {
 
     void "test navigation journal"() {
-        when: "going to journal"
+        when: 'going to journal'
         go '/public'
-        then:
+        then: 'display journal entries'
         title == "journal"
-
     }
+
+
 }

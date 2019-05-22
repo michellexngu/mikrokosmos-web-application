@@ -12,7 +12,7 @@ class AboutSpec extends GebSpec {
     void "test navigation about"() {
         when: "going to about"
         go '/public/about'
-        then:"show about me"
+        then: "show about me"
         title == "about me"
     }
 }
