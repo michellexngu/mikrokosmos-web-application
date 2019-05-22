@@ -10,8 +10,6 @@
 <head>
     <meta name="layout" content="main">
     <title>projects</title>
-    <asset:stylesheet src="stylesheet.css"></asset:stylesheet>
-    <asset:link rel="icon" href="michelle_logo.ico" type="image/x-ico"/>
 
 </head>
 
@@ -65,8 +63,7 @@
                     </figcaption>
                 </figure>
 
-                <div class="background">
-                    <figure class="effect-sadie bg">
+                    <figure class="effect-sadie">
                         <asset:image src="sorck.svg"></asset:image>
                         <figcaption>
                             <h2>SORCK<span>Schema</span></h2>
@@ -77,7 +74,6 @@
                                 data-target="#sorck-info">view more</a><br></p>
                         </figcaption>
                     </figure>
-                </div>
             </div>
 
             <div class="col-sm-8">
@@ -113,7 +109,7 @@
                         In their work, football coaches make extensive use of statistics, but both entering data and fighting
                         through Excel sheets to extract the desired information can be bothersome.
                         An application where the ressources of the coaches can be used fully.</p>
-%{--                        <asset:image src="coachingElevenImg.svg"></asset:image>--}%
+%{--%                        <asset:image src="coachingElevenImg.svg"></asset:image>--}%
                     </div>
                 </div>
 

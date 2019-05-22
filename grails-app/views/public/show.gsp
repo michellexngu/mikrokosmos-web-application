@@ -31,33 +31,37 @@
     <h1>${post.title}</h1>
 
     <div id="body_align">
-        <p>${post.body}</p>
+        <p class="journal-entry-body">${post.body}</p>
 
         <p>Written by: ${post.author}</p>
         <br>
     </div>
 
 
-    <div class="comment-section">
+    <div class="comment-section row">
+        <div class="col-lg-8">
             <h4>Comments</h4>
-            <g:each in="${postList}" var="comments">
-                <p>Author: ${comments.author}
-                    Comment: ${comments.body}
-                    </p>
+            <g:each in="${webec.Comment.list()}" var="comments">
+                <p>${comments.author}:
+                ${comments.body}
+                </p>
             </g:each>
             <g:form controller="comment" action="save">
-                <fieldset class="form">
+                <fieldset class="form form-comment">
                     Name:<br>
-                    <input type="text" name="author">
-                    <textarea name="body" rows="10" cols="30" placeholder="Share your thoughts..."></textarea>
-                    <input type="hidden" name="post" value="${post.id}"/>
+                    <input class="input-align" type="text" name="author" placeholder="Enter your name"></br>
+                    Comment: <br>
+                    <textarea class="input-align" name="body" rows="10" cols="30"
+                              placeholder="Share your thoughts..."></textarea>
+                    <input type="hidden" name="post" value="${webec.Post.list().id}"/>
                 </fieldset>
                 <br>
-                <fieldset>
+                <fieldset class="form-comment">
                     <g:submitButton name="create" class="PostBtn" value="Comment"/>
                 </fieldset>
             </g:form>
         </div>
+    </div>
 </div>
 </body>
 </html>
