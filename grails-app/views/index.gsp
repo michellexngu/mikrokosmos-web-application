@@ -25,7 +25,7 @@
             </p>
 
             <div class="btn-page-link">
-                <a class="link" href="public/index">explore my galaxy</a>
+                <a class="link" href="public/">explore my galaxy</a>
                 <i class="fas fa-arrow-right"></i>
 
             </div>
@@ -35,29 +35,6 @@
     <div class="col-sm-4"></div>
 
 </div>
-%{--<div class="svg" role="presentation">--}%
-%{--    <div class="canvas-container">--}%
-%{--        <asset:image src="shooting-star.png" class="canvas_pic"/>--}%
-%{--    </div>--}%
-%{--</div>--}%
-
-%{--<div id="content" role="main">--}%
-%{--    <section class="row colset-2-its">--}%
-%{--        <div class="flex">--}%
-%{--            <h1 class="intro-title">mikrokosmos</h1>--}%
-
-%{--            <p class="intro-text">--}%
-%{--                shine, dream, smile. let us light up the night, we shine in our own ways. we shine just the way we are tonight--}%
-%{--            </p>--}%
-
-%{--            <div class="btn-page-link">--}%
-%{--                <a class="link" href="public/journal">explore my galaxy</a>--}%
-%{--                <i>-></i>--}%
-%{--            </div>--}%
-%{--        </div>--}%
-%{--    </section>--}%
-%{--</div>--}%
-%{--</div>--}%
 
 </body>
 </html>
