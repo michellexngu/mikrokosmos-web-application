@@ -7,6 +7,7 @@ The administrator can create/edit/delete posts. Viewers have the possibility to 
 <p>
   <img src="https://github.com/michellexngu/mikrokosmos-web-application/blob/master/grails-app/assets/images/home.png" width="500"/>
 </p>
+
 ### Project Display
 <p>
   <img src="https://github.com/michellexngu/mikrokosmos-web-application/blob/master/grails-app/assets/images/project.png" width="500"/>
